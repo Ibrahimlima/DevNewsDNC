@@ -1,0 +1,14 @@
+:root{
+    --color-contrast-back: #02A28F;
+    --color-base1: #fff;
+    --color-base2: #000;
+    --color-contrast-text: #616161;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+

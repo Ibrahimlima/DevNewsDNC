@@ -56,6 +56,10 @@ Mantendo a mesma identidade visual e experiência de navegação em todas as pla
 
 ---
 
+- Site Funcional: https://dev-news-dnc.vercel.app
+
+---
+
 ## 👨‍💻 Autor
 
 **Bruno Barros**  

@@ -27,10 +27,12 @@
     box-shadow: 0 0.75rem 1rem var(--color-shadow); 
 }
 
-h1{
+h1>a{
     font-size: 2.25rem;
     font-weight: 900;
     margin-left: 4rem;
+    color: var(--color-base1);
+    text-decoration: none;
 }
 
 h2{
@@ -46,6 +48,12 @@ h3{
 h4{
     font-size: 0.875rem;
     font-weight: 600;
+}
+a:focus-visible{
+    outline: 2px solid var(--color-contrast-back);
+    outline-offset: 4px;
+    border-radius: 6px;
+
 }
 
 header{
@@ -94,6 +102,10 @@ main{
     
 }
 
+.recentPostTitle > a:focus-visible{
+    outline: 2px solid var(--color-base1);
+}
+
 
 #posts{
     display: grid;
@@ -134,23 +146,24 @@ main{
 }
 
 .popularCard{
-    display: flex;
     border-radius: 1rem;
+}
+
+.popularLinks{
+    display: flex;
+    color: var(--color-base2);
+    text-decoration: none;
     margin: 1.25rem 0;
     padding: 0.75rem;
+    
 }
 
-.popularCard > a{
-     color: var(--color-base2);
-    text-decoration: none;
-}
-
-.popularCard > div{
+.popularLinks > div{
     margin-left: .75rem;
 
 }
 
-.popularCard > a> div > p{
+.popularLinks> div > p{
     font-size: 0.75rem;
 }
 
@@ -159,24 +172,39 @@ ul{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
+    width: 100%;
 }
 
 li{
     list-style-type:none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: .875rem 0;
+    display: flex;
+    align-items: center;
 }
 
 li > a{
     color: var(--color-contrast-text);
-    text-decoration: none;    
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0.25rem 0.25rem; 
 }
 
-li ::before{
+li > span{
+    text-align: right;
+    min-width: 2ch;
+}
+
+
+li::before{
     content: '>';
     margin-right: 0.3rem;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 1ch;
+    text-align: center;
 }
 
 footer{
@@ -191,7 +219,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 969px) {
 
     header{
         display: flex;
@@ -224,6 +252,24 @@ footer{
     .cardInfo > p{
         margin: .5rem 0;
     }
+}
+
+@media only screen and (min-width:970px) and (max-width: 1023px){
+    main{
+        grid-template-columns: 60% 40%;
+        margin: 0 1.75rem;
+        padding: 0rem;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1470px){
+    main{
+        grid-template-columns: 70% 30%;
+        margin: 0 2.5rem;
+        padding: 0rem;
+    }
+    
+
 }
 
 

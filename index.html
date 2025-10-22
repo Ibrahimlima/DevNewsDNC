@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de tecnologia desenvolvido como desafio pro curso de engenharia de software da Escola DNC">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 </head>
 <body>
     <header>
-        <h1>The Dev News</h1>
+        <h1><a href="#">The Dev News</a></h1>
     </header>
     <main>
         <section id="banner">
@@ -28,46 +29,46 @@
             </div>
             <article id="posts">
                 <div class="card shadow">
-                    <img src="./assets/cardMobile.svg" alt="">
+                    <img src="./assets/cardMobile.svg" alt="mobile" loading="lazy">
                     <div class="cardInfo">
                         <p class="cardCategories">desenvolvimento</p>
                         <h3>Desenvolvimento mobile</h3>
                         <p><b>By</b> Fabio Tetsuo</p>
                         <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <p>22 Agosto 2022</p>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
                     </div>
                 </div>
                 
                 <div class="card shadow">
-                    <img src="./assets/cardSaude.svg" alt="">
+                    <img src="./assets/cardSaude.svg" alt="saude" loading="lazy">
                     <div class="cardInfo">
                         <p class="cardCategories">saúde</p>
                         <h3>Balancear vida profissional e pessoal</h3>
                         <p><b>By</b> Ridho Satriawan</p>
                         <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <p>22 Agosto 2022</p>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
                     </div>
                 </div>
 
                 <div class="card shadow">
-                    <img src="./assets/cardVscode.svg" alt="">
+                    <img src="./assets/cardVscode.svg" alt="vscode" loading="lazy">
                     <div class="cardInfo">
                         <p class="cardCategories">desenvolvimento</p>
                         <h3>Configurando VSCode</h3>
                         <p><b>By</b> Fabio Tetsuo</p>
                         <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <p>22 Agosto 2022</p>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
                     </div>
                 </div>
 
                 <div class="card shadow">
-                    <img src="./assets/cardProdut.svg" alt="">
+                    <img src="./assets/cardProdut.svg" alt="produtividade" loading="lazy">
                     <div class="cardInfo">
                         <p class="cardCategories">produtividade</p>
                         <h3>2 monitores ou 1 ultrawide?</h3>
                         <p><b>By</b> Fulano da Silva</p>
                         <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <p>22 Agosto 2022</p>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
                     </div>
 
                 </div>
@@ -81,29 +82,35 @@
            </div>
            <article>
             <div class="popularCard shadow">
-                <img src="./assets/postDev.svg" alt="">
-                <div>
-                    <h4>Desevolvimento atual</h4>
-                    <p>22 Agosto 2022</p>
-                </div>
+                <a class="popularLinks" href="#">
+                    <img src="./assets/postDev.svg" alt="dev" loading="lazy">
+                    <div>
+                        <h4>Desenvolvimento atual</h4>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
+                    </div>
+                </a>
                 
             </div>
 
             <div class="popularCard shadow">
-                <img src="./assets/postGit.svg" alt="">
-                <div>
-                    <h4>GitLab vs GitHub</h4>
-                    <p>22 Agosto 2022</p>
-                </div>
+                <a class="popularLinks" href="#">
+                    <img src="./assets/postGit.svg" alt="git" loading="lazy">
+                    <div>
+                        <h4>GitLab vs GitHub</h4>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
+                    </div>
+                </a>
                 
             </div>
 
             <div class="popularCard shadow">
-                <img src="./assets/postCoffe.svg" alt="">
-                <div>
-                    <h4>Café atrapalha?</h4>
-                    <p>22 Agosto 2022</p>
-                </div>
+                <a class="popularLinks" href="#">
+                    <img src="./assets/postCoffe.svg" alt="coffe" loading="lazy">
+                    <div>
+                        <h4>Café atrapalha?</h4>
+                        <p><time datetime="2022-08-22">22 Agosto 2022</time></p>
+                    </div>
+                </a>
                 
             </div>
            </article>
@@ -115,10 +122,10 @@
                 <h3>Categorias</h3>
             </div>        
             <ul>
-                <li><a href="#">Saúde</a> (1)</li>
-                <li><a href="#">Desenvolvimento</a> (2)</li>
-                <li><a href="#">Produtividade</a> (2)</li>
-                <li><a href="#">Opnião</a> (1)</li>
+                <li><a href="#">Saúde<span>(1)</span></a></li>
+                <li><a href="#">Desenvolvimento<span>(2)</span></a></li>
+                <li><a href="#">Produtividade<span>(2)</span></a></li>
+                <li><a href="#">Opinião<span>(1)</span></a></li>
             </ul>
         </section>
     </main> 

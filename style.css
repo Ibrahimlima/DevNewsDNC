@@ -3,7 +3,7 @@
     --color-base1: #fff;
     --color-base2: #000;
     --color-contrast-text: #616161; 
-    --color-shadow: rgba(97, 97, 97, 0.26);  
+    --color-shadow: rgba(97, 97, 97, 0.192);  
 }
 
 *{
@@ -24,12 +24,13 @@
 }
 
 .shadow{
-    box-shadow: var(--color-shadow) 1px 3px 1px 1px; 
+    box-shadow: 0 0.75rem 1rem var(--color-shadow); 
 }
 
 h1{
     font-size: 2.25rem;
     font-weight: 900;
+    margin-left: 4rem;
 }
 
 h2{
@@ -115,9 +116,17 @@ header{
 }
 
 .cardInfo{
-    padding: 0.5rem 1rem 1rem 1rem;
-    
+    padding: 0.5rem 1rem 1rem 1rem;    
     border-radius: 0rem 0rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 12rem
+}
+
+.cardCategories{
+    color: var(--color-contrast-back);
+
 }
 
 .popularCard{
@@ -136,7 +145,30 @@ header{
     font-size: 0.75rem;
 }
 
+ul{
+    color: var(--color-contrast-text);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
+li{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .875rem 0;
+}
+
+li > a{
+    color: var(--color-contrast-text);
+    text-decoration: none;    
+}
+
+li ::before{
+    content: '>';
+    margin-right: 0.3rem;
+}
 
 footer{
     background-color: var(--color-contrast-back);
@@ -146,4 +178,5 @@ footer{
     justify-content: center;
     color: var(--color-base1);
     font-weight: 400;
+    margin-top: 4rem;
 }

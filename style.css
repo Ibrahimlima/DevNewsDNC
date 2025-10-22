@@ -2,7 +2,8 @@
     --color-contrast-back: #02A28F;
     --color-base1: #fff;
     --color-base2: #000;
-    --color-contrast-text: #616161;   
+    --color-contrast-text: #616161; 
+    --color-shadow: rgba(97, 97, 97, 0.26);  
 }
 
 *{
@@ -93,3 +94,24 @@ header{
 }
 
 
+#posts{
+    display: grid;
+    grid-template-columns: 50% 50%;  
+
+}
+
+.card{
+    margin: 0.75rem 1rem 1rem;
+    border-radius: 1rem;  
+    box-shadow: var(--color-shadow) 1px 3px 1px 1px; 
+}
+
+.card > img{
+    width: 100%;    
+}
+
+.cardInfo{
+    padding: 0.5rem 1rem 1rem 1rem;
+    
+    border-radius: 0rem 0rem 1rem 1rem;
+}

@@ -57,11 +57,11 @@ header{
 
 main{
     display: grid;
-    grid-template-columns: 75% 25%; 
+    grid-template-columns: 60% 40%; 
     grid-template-rows: auto;
     gap: 1.5rem;
     padding: 0rem 2rem;
-    margin: 0 9.75rem;
+    margin: 0 6.75rem;
     
 }
     
@@ -117,12 +117,20 @@ main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 12rem
+    height: auto;
 }
 
 .cardCategories{
     color: var(--color-contrast-back);
 
+}
+
+.cardCategories{
+        margin: .75rem 0;
+}
+
+.cardInfo > p{
+        margin: .75rem 0;
 }
 
 .popularCard{
@@ -132,12 +140,17 @@ main{
     padding: 0.75rem;
 }
 
+.popularCard > a{
+     color: var(--color-base2);
+    text-decoration: none;
+}
+
 .popularCard > div{
     margin-left: .75rem;
 
 }
 
-.popularCard > div > p{
+.popularCard > a> div > p{
     font-size: 0.75rem;
 }
 
@@ -178,7 +191,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 
     header{
         display: flex;
@@ -200,4 +213,24 @@ footer{
         grid-template-columns: 100%;
     }
     
+    .cardInfo{
+        height: auto;
+    }
+
+    .cardCategories{
+        margin: .5rem 0;
+    }
+
+    .cardInfo > p{
+        margin: .5rem 0;
+    }
+}
+
+
+@media only screen and (min-width: 1470px){
+
+    main{
+        grid-template-columns: 75% 25%;
+    }
+
 }

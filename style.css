@@ -23,9 +23,8 @@
     align-items: center;
 }
 
-.recentPostTitle > a{
-    color: var(--color-base1);
-    
+.shadow{
+    box-shadow: var(--color-shadow) 1px 3px 1px 1px; 
 }
 
 h1{
@@ -43,6 +42,11 @@ h3{
     font-weight: 800;
 }
 
+h4{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
 header{
     margin-bottom: 2rem;
     padding: 1rem 0rem 1rem 8rem;
@@ -50,7 +54,7 @@ header{
 
 main{
     display: grid;
-    grid-template-columns: 70% 30%; 
+    grid-template-columns: 75% 25%; 
     grid-template-rows: auto;
     gap: 1.5rem;
     padding: 0rem 2rem;
@@ -103,7 +107,7 @@ header{
 .card{
     margin: 0.75rem 1rem 1rem;
     border-radius: 1rem;  
-    box-shadow: var(--color-shadow) 1px 3px 1px 1px; 
+    
 }
 
 .card > img{
@@ -114,4 +118,32 @@ header{
     padding: 0.5rem 1rem 1rem 1rem;
     
     border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.popularCard{
+    display: flex;
+    border-radius: 1rem;
+    margin: 1.25rem 0;
+    padding: 0.75rem;
+}
+
+.popularCard > div{
+    margin-left: .75rem;
+
+}
+
+.popularCard > div > p{
+    font-size: 0.75rem;
+}
+
+
+
+footer{
+    background-color: var(--color-contrast-back);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-base1);
+    font-weight: 400;
 }
